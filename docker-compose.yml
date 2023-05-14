@@ -1,0 +1,8 @@
+version: "3"
+services:
+  shared-files:
+    image: halverneus/static-file-server:latest
+    ports:
+      - 9999:8080
+    volumes:
+      - './public:/web'
